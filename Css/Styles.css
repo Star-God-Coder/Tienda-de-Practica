@@ -31,6 +31,14 @@ body{
     flex-direction: column;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
 .Main{
     width: 100%;
 }
@@ -42,14 +50,14 @@ nav{
     border: 3px solid black;
     background-color: var(--Dark);
 }
-ul{
+.Lista{
     display: none;
 }
-.Menu-img:hover{
-    ul{
+/*.Header--Menu:hover{
+    .Lista{
         display: initial;
     }
-}
+}*/
 img{
     margin: 12px;
 }
@@ -95,4 +103,26 @@ input{
     border-radius: 20px;
     background-color: var(--Dark);
     color: var(--peach)
+}
+.Product:hover{
+    width: 120%;
+}
+.Product img{
+    border-radius: 20px;
+    transition: all 300ms;
+}
+.Product img:hover{
+    transform: scale(1.2);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.footer a{
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer--Enlace{
+    width: 100px;
 }
